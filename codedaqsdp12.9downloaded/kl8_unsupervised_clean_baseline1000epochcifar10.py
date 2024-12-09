@@ -31,7 +31,7 @@ from utils.config import Config, ConfigDict, DictAction
 import numpy as np
 #from resnet_multibn_ensembleFC_kl6_base_unsupervised import resnet18 as ResNet18
 #from models.resnet_add_normalizecifar100 import resnet18_NormalizeInput
-from models.resnet_add_normalizereviseph import resnet50
+from models.resnet_add_normalize import resnet34
 import apex
 import pickle
 from torchvision import transforms, datasets
