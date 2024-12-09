@@ -1368,34 +1368,6 @@ def train(train_loader, model, model_pre,awp_adversary,contrast_criterion, optim
         # loss_here=-1*(F.cosine_similarity(f_proj,f_pre_proj).mean()+2*F.cosine_similarity(f_cl1,f_cl2).mean())
         #loss_here=F.cosine_similarity(f_proj,f_pre_proj).mean()
         #f_cl_proj = model(x_cl, bn_name='pgd', contrast=True)
-        
-        ######add code for proto
-        # conf_l=pseudo_l_conf[pseudo_l_conf>-1] 
-        # conf_x=images[2][pseudo_l_conf>-1]
-        # conf_f_pre_proj=f_pre_proj[pseudo_l_conf>-1]
-        # conf_x_adv=at_proto(protos_all,conf_x,conf_l,conf_f_pre_proj,criterion_ce)
-        # x_adv1,x_adv2=at_proto2(protos_all,images[2],pseudo_l,criterion_ce)
-        # #add for proto adv
-        # f_adv_proj1=F.normalize(model(x_adv1,bn_name='normal'),dim=1)
-        # f_adv_proj2=F.normalize(model(x_adv2,bn_name='normal'),dim=1)
-        
-        # logits1=torch.mm(f_adv_proj1,protos_all.t())
-        # logits2=torch.mm(f_adv_proj2,protos_all.t())
-        # prob1=F.softmax(logits1,dim=1)
-        # prob2=F.softmax(logits2,dim=1)
-        # logprob1=F.log_softmax(logits1,dim=1)
-        # logprob2=F.log_softmax(logits2,dim=1)
-            
-        # loss_kl=F.kl_div(logprob1,prob2,reduction='batchmean')
-        # loss_kl=loss_kl+F.kl_div(logprob2,prob1,reduction='batchmean')
-        
-        
-        # loss_here=loss_here+0.5*loss_kl
-        #loss_here=loss_here-0.5*F.cosine_similarity(f_adv_proj,f_proj).mean()
-          
-        # logits_proto_adv=torch.mm(f_adv_proj,protos_all.t())
-        
-        
         # for j in range(pseudo_l.shape[0]):
         #     logits_proto_adv[j][int(conf_l[j].item())]=f_conf_adv_proj[j].dot(conf_f_pre_proj[j]).item()
         
