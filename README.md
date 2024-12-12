@@ -11,9 +11,9 @@ $$CUDA \underline{} VISIBLE\underline{}DEVICES=indices\underline{} of \underline
 
 Then get the robust model:
 
-$$CUDA_VISIBLE_DEVICES=indices \underline{}of \underline{}GPUs \quad python3 \quad kl8\underline{}unsupervised\underline{}stage3try256dimtryotherthresanotherbaseline0solodeaclteststrongweakawpnewcifar10fourbnv2newawpscheme.py  \quad configs\text{/}small\text{/}cifar10\text{/}simclr\underline{}rcrop\underline{}unsupervised.py$$
+$$CUDA\underline{}VISIBLE\underline{}DEVICES=indices \underline{}of \underline{}GPUs \quad python3 \quad kl8\underline{}unsupervised\underline{}stage3try256dimtryotherthresanotherbaseline0solodeaclteststrongweakawpnewcifar10fourbnv2newawpscheme.py  \quad configs\text{/}small\text{/}cifar10\text{/}simclr\underline{}rcrop\underline{}unsupervised.py$$
 (with epoch set to 100 and weight_decay 5e-4, also remove the proj_head layer from the models)
 
 ## To finetune and test the model:
 
-python3 finetuning_SLF_kl8_onebnsolonormalizeinputnetworkcifar10newforconferencewithaa2.py --ckpt checkpoints_of_models
+$$python3\quad finetuning\underline{}SLF\underline{} kl8_onebnsolonormalizeinputnetworkcifar10newforconferencewithaa2.py \squad--ckpt \squad checkpoints_of_models$$
