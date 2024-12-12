@@ -6,7 +6,8 @@
 
 First get the clean model:
 
-$$CUDA \underline{} VISIBLE\underline{}DEVICES=indices\underline{} of \underline{}GPUs\quad python3 \quad kl8\underline{}unsupervised\underline{}clean\underline{}baseline1000epochcifar10.py \quad configs/small/cifar10/simclr\underline{}rcrop\underline{}unsupervised.py (with epoch set to 1000 and weight_decay 1e-5)$$
+$$CUDA \underline{} VISIBLE\underline{}DEVICES=indices\underline{} of \underline{}GPUs\quad python3 \quad kl8\underline{}unsupervised\underline{}clean\underline{}baseline1000epochcifar10.py \quad configs\text{/}small/text{/}cifar10\text{/}simclr\underline{}rcrop\underline{}unsupervised.py$$ 
+(with epoch set to 1000 and weight_decay 1e-5)
 
 Then get the robust model:
 
