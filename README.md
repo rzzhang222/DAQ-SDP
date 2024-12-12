@@ -6,11 +6,11 @@
 
 First get the clean model:
 
-CUDA_VISIBLE_DEVICES=# of GPUs python3 kl8_unsupervised_clean_baseline1000epochcifar10.py configs/small/cifar10/simclr_rcrop_unsupervised.py (with epoch set to 1000 and weight_decay 1e-5)
+$$CUDA_VISIBLE_DEVICES=# of GPUs python3 kl8_unsupervised_clean_baseline1000epochcifar10.py configs/small/cifar10/simclr_rcrop_unsupervised.py (with epoch set to 1000 and weight_decay 1e-5)$$
 
 Then get the robust model:
 
-CUDA_VISIBLE_DEVICES=# of GPUs python3 kl8_unsupervised_stage3try256dimtryotherthresanotherbaseline0solodeaclteststrongweakawpnewcifar10fourbnv2newawpscheme.py configs/small/cifar10/simclr_rcrop_unsupervised.py (with epoch set to 100 and weight_decay 5e-4, also remove the proj_head layer from the models)
+$$CUDA_VISIBLE_DEVICES=# of GPUs python3 kl8_unsupervised_stage3try256dimtryotherthresanotherbaseline0solodeaclteststrongweakawpnewcifar10fourbnv2newawpscheme.py configs/small/cifar10/simclr_rcrop_unsupervised.py (with epoch set to 100 and weight_decay 5e-4, also remove the proj_head layer from the models)$$
 
 ## To finetune and test the model:
 
