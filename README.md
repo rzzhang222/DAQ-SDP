@@ -16,4 +16,4 @@ $$CUDA\underline{}VISIBLE\underline{}DEVICES=indices \underline{}of \underline{}
 
 ## To finetune and test the model:
 
-'python3 finetuning_SLF_kl8_onebnsolonormalizeinputnetworkcifar10newforconferencewithaa2.py --ckpt checkpoints_of_the_pretrained_models'
+    python3 finetuning_SLF_kl8_onebnsolonormalizeinputnetworkcifar10newforconferencewithaa2.py --ckpt checkpoints_of_the_pretrained_models
